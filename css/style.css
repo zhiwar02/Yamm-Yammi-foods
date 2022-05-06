@@ -101,10 +101,7 @@ section {
   font-size: 2rem;
   font-weight: bold;
 }
-.span-color {
-  color: crimson;
-  font-size: 4rem;
-}
+
 .sub-heading {
   text-align: center;
   color: var(--color-secondery);
@@ -362,6 +359,7 @@ header .icons #menu-bars {
     margin: 0 1rem;
   }
 }
+
 /*hero style*/
 
 .hero--information {
@@ -373,6 +371,9 @@ header .icons #menu-bars {
   justify-content: center;
   margin: 3rem 8rem;
 }
+.hero--title{
+  font-size: 1.6rem;
+}
 .hero--description {
   text-align: right;
   line-height: 1.7;
@@ -382,7 +383,10 @@ header .icons #menu-bars {
   display: flex;
   flex-direction: row;
 }
-
+.span-color {
+  color: crimson;
+  font-size: 2.2rem;
+}
 .hero--btn .btn--primary {
   margin-left: 3rem;
 }
@@ -397,8 +401,9 @@ header .icons #menu-bars {
 .image--introduction {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 2rem;
+  align-items: start;
+  margin: 2rem 0;
+  justify-content: flex-start;
 }
 .image--introduction img {
   display: inline-block;
@@ -409,7 +414,9 @@ header .icons #menu-bars {
   text-align: right;
 }
 .hero--information .btn {
-  font-size: 2rem;
+  align-self: flex-start;
+  margin-left: 4rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .hero-container {
@@ -439,7 +446,12 @@ header .icons #menu-bars {
     font-size: 1.8rem;
   }
   .hero--title {
+    font-size: 2.8rem;
     margin-bottom: 0;
+  }
+  .span-color {
+    color: crimson;
+    font-size: 4rem;
   }
   .hero--description {
     line-height: 1.5;
