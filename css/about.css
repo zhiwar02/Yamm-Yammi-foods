@@ -591,4 +591,7 @@ color: var(--black);
   .footer .credit {
     font-size: 2rem;
   }
+  body{
+    overflow-x: hidden;
+  }
 }

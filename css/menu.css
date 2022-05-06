@@ -498,4 +498,7 @@ header .icons #menu-bars {
   .footer .credit {
     font-size: 2rem;
   }
+  body{
+    overflow-x: hidden;
+  }
 }
