@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سەرەتا</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/
-font-awesome/5.15.2/css/all.min.css"
-    />
-    <script src="./JavaScript/script.js" defer></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <script src="./JavaScript/script.js" async></script>
     <link rel="stylesheet" href="aos.css" />
   </head>
   <body>
@@ -32,7 +28,7 @@ font-awesome/5.15.2/css/all.min.css"
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
         <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="./shopping-card.html" class="fas fa-shopping-cart"></a>
         <form action="" id="search-form">
           <input
             type="search"
@@ -121,18 +117,12 @@ font-awesome/5.15.2/css/all.min.css"
       <h3 data-aos="zoom-out-left" class="sub-heading">لیستی خواردنەکان</h3>
       <h3 data-aos="fade-up" class="heading">داواکراوترین خواردنەکان</h3>
 
-      <div
-        class="box-container"
-        data-aos="zoom-in"
-        data-aos="zoom-in"
-        data-aos="zoom-in"
-        data-aos="zoom-in"
-      >
+      <div class="box-container" data-aos="zoom-in">
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/dish-1.png" alt="" />
-          <h3>هەمبەرگر</h3>
+          <img class="cart-image" src="images/dish-1.png" alt="" />
+          <h3 class="cart-title">هەمبەرگر</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -140,15 +130,31 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>2,000<sub>IQD</sub></span>
+          <span class="cart-price">2,000<sub>IQD</sub></span>
+          <a href="./shopping-card.html" class="btn btn--secondery">داواکردن</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img class="cart-image" src="images/dish-2.png" alt="" />
+          <h3 class="cart-title">کینتاکی</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="cart-price">5,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
 
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/dish-2.png" alt="" />
-          <h3>کینتاکی</h3>
+          <img class="cart-image" src="images/dish-3.png" alt="" />
+          <h3 class="cart-title">مریشکی برژاو</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -156,15 +162,15 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>5,000<sub>IQD</sub></span>
+          <span class="cart-price">9,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
 
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/dish-3.png" alt="" />
-          <h3>مریشکی برژاو</h3>
+          <img class="cart-image" src="images/dish-4.png" alt="" />
+          <h3 class="cart-title">پیتزای قاچک</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -172,30 +178,14 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>9,000<sub>IQD</sub></span>
-          <a href="#" class="btn btn--secondery">داواکردن</a>
-        </div>
-
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/dish-4.png" alt="" />
-          <h3>پیتزای قاچک</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <span>5,000<sub>IQD</sub></span>
+          <span class="cart-price">5,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/food-3.png" alt="" />
-          <h3>پەتاتەی سورەکراو</h3>
+          <img class="cart-image" src="images/food-3.png" alt="" />
+          <h3 class="cart-title">پەتاتەی سورەکراو</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -203,14 +193,14 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>1,000<sub>IQD</sub></span>
+          <span class="cart-price">1,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/menu-1.jpg" alt="" />
-          <h3>پیتزای مریشک</h3>
+          <img class="cart-image" src="images/menu-1.jpg" alt="" />
+          <h3 class="cart-title">پیتزای مریشک</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -218,14 +208,14 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>7,000<sub>IQD</sub></span>
+          <span class="cart-price">7,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/home-img-1.png" alt="" />
-          <h3>مەعکەرۆنی</h3>
+          <img class="cart-image" src="images/home-img-1.png" alt="" />
+          <h3 class="cart-title">مەعکەرۆنی</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -233,14 +223,14 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>2,000<sub>IQD</sub></span>
+          <span class="cart-price">2,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="images/breakfast-food.jpg" alt="" />
-          <h3>هێلکەو ڕۆن</h3>
+          <img class="cart-image" src="images/breakfast-food.jpg" alt="" />
+          <h3 class="cart-title">هێلکەو ڕۆن</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -248,7 +238,7 @@ font-awesome/5.15.2/css/all.min.css"
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <span>1,000<sub>IQD</sub></span>
+          <span class="cart-price">1,000<sub>IQD</sub></span>
           <a href="#" class="btn btn--secondery">داواکردن</a>
         </div>
       </div>
@@ -433,7 +423,11 @@ font-awesome/5.15.2/css/all.min.css"
       <h3 data-aos="zoom-in-left" class="sub-heading">ئێستا داوا بکە</h3>
       <h1 data-aos="zoom-in-left" class="heading">خێرا و خاوێن</h1>
 
-      <form data-aos="zoom-out-left" action="" method="post">
+      <form
+        data-aos="zoom-out-left"
+        action="https://formspree.io/f/mjvlrbbg"
+        method="post"
+      >
         <div class="inputBox">
           <div class="input">
             <span>ناو:</span>
